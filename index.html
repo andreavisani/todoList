@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <title>Todolist</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="ToDo list web app">
+  <meta name="author" content="Andrea Visani">
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="panel">
+      <h1>Topics to review</h1>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- if no activities, this is the message to show -->
+      <p class="empty-list-message">No activities</p>
+
+      <!-- List of activities used for testing purpose -->
+      <ul class="todo-list">
+        <li class="todo-item">
+          <div class="todo-check">
+            <img src="images/check.svg" alt="Check Icon">
+          </div>
+          <p class="todo-text">Groceries</p>
+        </li>
+
+        <li class="todo-item">
+          <div class="todo-check">
+            <img src="images/check.svg" alt="Check Icon">
+          </div>
+          <p class="todo-text">Carrer fair</p>
+        </li>
+      </ul>
+
+      <!-- Add to-do task -->
+      <div class="panel add-todo">
+        <input type="text" placeholder="Add an activity">
+        <button>
+          <img src="images/add.svg" alt="plus icon">
+        </button>
+      </div>
+
+      <!-- Button to reset the list -->
+      <button class="reset-button">
+        Reset List
+      </button>
+
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
